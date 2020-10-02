@@ -1,0 +1,224 @@
+* {
+  outline: none;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #2a2a2a;
+  font-weight: 400;
+  letter-spacing: 0.015em;
+  font-size: 1.05em;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.no-rem {
+  margin: 0rem;
+}
+
+.gray {
+  opacity: .25;
+}
+
+.ui-kit-wrapper {
+  padding: 100px;
+  width: 600px;
+}
+
+.hero-h1 {
+  font-size: 3.5em;
+  margin-bottom: 2rem;
+  line-height: 1em;
+  font-weight: 700;
+}
+
+.hero-h1 mark {
+  background: transparent;
+  color: #8eca48;
+}
+
+h1 {
+  font-size: 1.9em;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin-bottom: 2rem;
+}
+.label {
+  font-size: 0.9em;
+  margin: 0.1rem 0;
+  line-height: 1.2em;
+}
+
+a {
+  color: #2a2a2a;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+a.selected {
+  color: #8eca48;
+}
+
+a:hover {
+  color: #8eca48;
+}
+
+button {
+  background: #8eca48;
+  color: white;
+  border: 0px;
+  padding: 14px 16px 12px;
+  border-radius: 8px;
+}
+button.black {
+  background: #222;
+  color: white;
+}
+button.mini {
+  padding: 10px 12px;
+}
+button.mini-button {
+  background: white;
+  color: #7DAE3F;
+  border-radius: 8px;
+  border: 1px solid #7DAE3F;
+  font-weight: 300;
+  padding: 4px 10px;
+  text-align: center;
+  margin: 0 1rem;
+  display: flex;
+}
+
+button span {
+  margin-left: 12px;
+  padding-left: 9px;
+  pointer-events: none;
+  border-left: 1px solid #7DAE3F;
+}
+
+button mark {
+  color: #7DAE3F;
+  background: none;
+}
+
+.text-field {
+  margin: 1rem 0;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.text-field.wide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-field label {
+  display: inline-block;
+  width: 180px;
+  min-width: 180px;
+}
+
+.text-field input,textarea {
+  font-size: 1.1em;
+  width: 300px;
+  border-radius: 8px;
+  padding: 14px 12px 12px;
+  background: #F9F9F9;
+  border: 0px;
+  border: 1px solid transparent;
+}
+
+.text-field textarea {
+  height: 4rem;
+}
+
+.text-field input.gray, .text-field textarea.gray  {
+  background: #E9E9E9;
+  opacity: 1;
+}
+
+.text-field input.wide, .text-field textarea.wide {
+  width: 100%;
+}
+
+.text-field input:focus, textarea:focus {
+  outline: none;
+  border: 1px solid #eee;
+}
+.options {
+  margin: 1rem 0;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 2px 0px 3px;
+}
+
+.options.with-border {
+  border: 1px solid #e7e7e7;
+}
+
+.option {
+  color: rgb(39, 39, 39);
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.option:first-child {
+  margin-right: 5px;
+}
+
+.option mark {
+  background: transparent;
+  padding: 1px 5px;
+  margin-right: -7px;
+  margin-left: 7px;
+  border-radius: 10px;
+  color: #ccc;
+  border: 1px solid #ccc;
+  pointer-events: none;
+  text-align: center;
+}
+
+.option.selected {
+  background: #444444;
+  color: white;
+  padding: 4px 10px 4px;
+}
+
+.option.selected mark {
+  color: #444444;
+  border: none;
+  background: white;
+}
