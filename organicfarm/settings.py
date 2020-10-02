@@ -11,9 +11,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'o6*0)r^uyizsj@!eiyhrh*r+ygexd&_lmy*^xbh%5e(8#@a+3$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['organic-farm-smr.herokuapp.com']
 
 
 # Application definition
