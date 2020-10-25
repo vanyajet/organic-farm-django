@@ -1,1 +1,265 @@
-{% load static %}<!DOCTYPE html><html lang="en"><head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>{% block title%}{% endblock %}</title> <meta name="keywords" content=""> <meta name="description" content=""> <meta name="author" content="">{% block extrahead %}<link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">{% endblock %}<link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}"> <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"> <link href="{% static 'css/style.css' %}" rel="stylesheet"> <link rel="stylesheet" href="{% static 'css/responsive.css' %}"> <link rel="stylesheet" href="{% static 'css/custom.css' %}"> <link rel="prefetch" href="{% static 'css/all.css' %}" as="style"> </head><body> <div class="preloader" id="preloader"> <div class="item"> <img src="{% static 'images/apple-touch-icon.png'%}"> </div></div><header class="main-header"> <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav"> <div class="container"> <div class="navbar-header"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation"> <i class="fa fa-bars"></i> </button> <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" class="logo" alt=""></a> </div><div class="collapse navbar-collapse" id="navbar-menu"> <div class="tel"> <h3>+7(905)300-10-16</h3> <p>Рабочее время: 8:00 - 20:00</p></div><ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp"> <li class="nav-item active"><a href="tel:+79370608621" target="_blank"><img class="phone_icon" src="{% static 'images/phone_icon.png' %}"><p class="phone_number">+7(905)300-10-16</p></a></li><li class="dropdown"> <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Продукция <div class="arrow-4"> <span class="arrow-4-left"></span> <span class="arrow-4-right"></span> </div></a> <ul class="dropdown-menu"> <li><a href="{% url 'home' %}#greens">Микрозелень</a></li><li><a href="{% url 'home' %}#vegetables">Овощи</a></li><li><a href="{% url 'home' %}#nabor">Наборы для выращивания</a></li></ul> </li><li class="nav-item"><a class="nav-link" href="{% url 'home' %}#delivery">Доставка</a></li><li class="nav-item"><a class="nav-link" href="{% url 'about' %}">О нас</a></li><li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Контакты</a></li></ul> </div></div></nav> </header>{% block content %}{% endblock %}<footer> <div class="footer-main"> <div class="container"> <div class="row"> <div class="col-lg-4 col-md-12 col-sm-12"> <div class="footer-widget"> <h4>О нас</h4> <p>Наша цель - кормить людей экологически чистыми продуктами круглый год.</p><p>Вся наша продукция произведена в самаркком комбинате "Тепличный".</p><p>Мы гарантируем Вам свежесть и пользу всей своей продукции.</p></div></div><div class="col-lg-4 col-md-12 col-sm-12"> <div class="footer-link-contact"> <h4>Контакты</h4> <ul> <li> <p><i class="fas fa-phone-square"></i>Телефон: <a href="tel:+79370608621">+7(905)300-10-16</a></p></li><li> <p><i class="fas fa-envelope"></i>Email: <a href="mailto:organic_farm@gmail.com">organic.smr@gmail.com</a></p></li></ul> </div></div><div class="col-lg-4 col-md-12 col-sm-12"> <div class="footer-link-contact"> <h4>Наши магазины</h4> <ul> <li> <p><i class="fas fa-map-marker-alt"></i>Метро Советская <br>Павильон № 1</p></li><li> <p><i class="fas fa-map-marker-alt"></i>Дом молодежи <br>ул. Аэродромная 16Г</p></li><li> <p><i class="fas fa-map-marker-alt"></i>Метро Победа <br>Павильон № 11</p></li><li> <p><i class="fas fa-map-marker-alt"></i>Метро Безымянка <br>Павильон № 16</p></li></ul> </div></div></div><hr> <div class="row"> <div class="col-lg-4 col-md-12 col-sm-12 grid_worktime"> <div class="footer-top-box"> <h3>Рабочее время</h3> <ul class="list-time"> <li>Ежедневно: с 08:00 до 20:00</li></ul> </div></div><div class="col-lg-4 col-md-12 col-sm-12 grid_social"> <div class="footer-top-box"> <h3>Социальные сети и мессенджеры</h3> <p>Напишите нам!</p><ul> <li><a href="https://www.instagram.com/organicfarmsamara/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li><li><a href="https://wa.me/79053001016" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li><li><a href="viber://chat?number=79053001016" target="_blank"><i class="fab fa-viber" aria-hidden="true"></i></a></li><li><a href="https://vk.com/organicfarmsamara" target="_blank"><i class="fab fa-vk" aria-hidden="true"></i></a></li></ul> </div></div></div></div></div></footer> <a href="#" id="back-to-top" title="Back to top" style="display: none;"><p>&uarr;</p></a> <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script> <script src="{% static 'js/popper.min.js' %}"></script> <script src="{% static 'js/bootstrap.min.js' %}"></script> <script src="{% static 'js/jquery-ui.js' %}"></script> <script src="{% static 'js/jquery.superslides.min.js' %}"></script> <script src="{% static 'js/bootsnav.js' %}"></script> <script defer src="{% static 'js/jquery.maskedinput.min.js' %}" ></script> <script defer src="{% static 'js/custom.js' %}"></script> <script type="text/javascript">$(".arrow-4").mouseover(function(){$(this).toggleClass("open");}); $(".arrow-4").mouseout(function(){$(this).removeClass("open");}); </script> <script>$(document).ready(function(){var $button=$(".info_button"), $container=$(".product_description"); $button.click(function(){$container.toggleClass("hidden");});}); </script> <script>$(document).ready(function(){$(".close_button").click(function(){$(".product_description").toggleClass("hidden");});}); </script> <script>$(function(){$("#phone1").mask("+7(999)999-99-99");}); </script> <script>document.addEventListener("DOMContentLoaded", function(){var lazyloadImages=document.querySelectorAll("img.lazy"); var lazyloadThrottleTimeout; function lazyload (){if(lazyloadThrottleTimeout){clearTimeout(lazyloadThrottleTimeout);}lazyloadThrottleTimeout=setTimeout(function(){var scrollTop=window.pageYOffset; lazyloadImages.forEach(function(img){if(img.offsetTop < (window.innerHeight + scrollTop)){img.src=img.dataset.src; img.classList.remove('lazy');}}); if(lazyloadImages.length==0){document.removeEventListener("scroll", lazyload); window.removeEventListener("resize", lazyload); window.removeEventListener("orientationChange", lazyload);}}, 20);}document.addEventListener("scroll", lazyload); window.addEventListener("resize", lazyload); window.addEventListener("orientationChange", lazyload);}); </script> <script>window.onload=function (){document.body.classList.add('loaded');}</script> <script>window.onload=function (){document.body.classList.add('loaded_hiding'); window.setTimeout(function (){document.body.classList.add('loaded'); document.body.classList.remove('loaded_hiding');}, 500);}</script></body></html>
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>{% block title%}{% endblock %}</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    {% block extrahead %}
+        <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+    {% endblock %}
+    <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <!-- Site CSS -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link rel="prefetch" href="{% static 'css/all.css' %}" as="style"> 
+
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+
+    <div class="preloader" id="preloader">
+        <div class="item">
+            <img src="{% static 'images/apple-touch-icon.png'%}">
+        </div>
+    </div>
+
+    <!-- Preloader End -->
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" class="logo" alt=""></a>
+                    
+                    
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <div class="tel">
+                        <h3>+7(905)300-10-16</h3>
+                        <p>Рабочее время: 8:00 - 20:00</p>
+                    </div>
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item active"><a href="tel:+79370608621" target="_blank"><img class="phone_icon" src="{% static 'images/phone_icon.png' %}"><p class="phone_number">+7(905)300-10-16</p></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Продукция                          
+                                <div class="arrow-4">
+                                    <span class="arrow-4-left"></span>
+                                    <span class="arrow-4-right"></span>
+                                </div>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'home' %}#greens">Микрозелень</a></li>
+                                <li><a href="{% url 'home' %}#vegetables">Продукция Самарского комбината "Тепличный"</a></li>
+                                <li><a href="{% url 'home' %}#nabor">Наборы для выращивания</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'home' %}#delivery">Доставка</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">О нас</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Контакты</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+
+            </div>
+
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Main Top -->
+
+{% block content %}
+{% endblock %}
+
+
+<!-- Start Footer  -->
+<footer>
+    <div class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-widget">
+                        <h4>О нас</h4>
+                        <p>Наша цель - кормить людей экологически чистыми продуктами круглый год.</p> 
+                        <p>Вся наша продукция произведена в самаркком комбинате "Тепличный".</p>
+                        <p>Мы гарантируем Вам свежесть и пользу всей своей продукции.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link-contact">
+                        <h4>Контакты</h4>
+                        <ul>
+                            <li>
+                                <p><i class="fas fa-phone-square"></i>Телефон: <a href="tel:+79370608621">+7(905)300-10-16</a></p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-envelope"></i>Email: <a href="mailto:organic_farm@gmail.com">organic.smr@gmail.com</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link-contact">
+                        <h4>Наши магазины</h4>
+                        <ul>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt"></i>Метро Советская <br>Павильон № 1</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt"></i>Дом молодежи <br>ул. Аэродромная 16Г</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt"></i>Метро Победа <br>Павильон № 11</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt"></i>Метро Безымянка <br>Павильон № 16</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 grid_worktime">
+                    <div class="footer-top-box">
+                        <h3>Рабочее время</h3>
+                        <ul class="list-time">
+                            <li>Ежедневно: с 08:00 до 20:00</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 grid_social">
+                    <div class="footer-top-box">
+                        <h3>Социальные сети и мессенджеры</h3>
+                        <p>Напишите нам!</p>
+                        <ul>
+                            <li><a href="https://www.instagram.com/organicfarmsamara/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="https://wa.me/79053001016" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                            <li><a href="viber://chat?number=79053001016" target="_blank"><i class="fab fa-viber" aria-hidden="true"></i></a></li>
+                            <li><a href="https://vk.com/organicfarmsamara" target="_blank"><i class="fab fa-vk" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer  -->
+
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;"><p>&uarr;</p></a>
+
+    <!-- ALL JS FILES -->
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/info_button.js' %}"></script>
+    
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'js/jquery.superslides.min.js' %}"></script>
+    <script src="{% static 'js/bootsnav.js' %}"></script>
+    <script defer src="{% static 'js/jquery.maskedinput.min.js' %}" ></script>
+    <script defer src="{% static 'js/custom.js' %}"></script>
+    
+
+    
+
+    <script type="text/javascript">
+        $(".arrow-4").mouseover(function() {
+            $(this).toggleClass("open");
+        });
+        $(".arrow-4").mouseout(function() {
+            $(this).removeClass("open");
+        });
+    </script>
+    <script>
+        $(function(){
+          $("#phone1").mask("+7(999)999-99-99");
+        });
+    </script>
+    
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var lazyloadImages = document.querySelectorAll("img.lazy");    
+      var lazyloadThrottleTimeout;
+      
+      function lazyload () {
+        if(lazyloadThrottleTimeout) {
+          clearTimeout(lazyloadThrottleTimeout);
+        }    
+        
+        lazyloadThrottleTimeout = setTimeout(function() {
+            var scrollTop = window.pageYOffset;
+            lazyloadImages.forEach(function(img) {
+                if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                  img.src = img.dataset.src;
+                  img.classList.remove('lazy');
+                }
+            });
+            if(lazyloadImages.length == 0) { 
+              document.removeEventListener("scroll", lazyload);
+              window.removeEventListener("resize", lazyload);
+              window.removeEventListener("orientationChange", lazyload);
+            }
+        }, 20);
+      }
+      
+      document.addEventListener("scroll", lazyload);
+      window.addEventListener("resize", lazyload);
+      window.addEventListener("orientationChange", lazyload);
+    });
+
+    </script>
+
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded');
+        }
+    </script>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+
+
+</body>
+
+</html>
