@@ -569,10 +569,11 @@
 	float: none;
 }
  .footer-top-box p{
-	 padding-bottom: 15px;
-	 color: #cccccc;
- }
-
+	padding-bottom: 15px;
+	color: #cccccc;
+    padding-top: 15px;
+    font-size: 17px;
+}
  .footer-top-box ul{
      display: inline-block;
 }
@@ -617,7 +618,7 @@
  .footer-widget p {
      color: #cccccc;
      font-weight: 400;
-     font-size: 14px;
+     font-size: 16px;
      padding-bottom: 20px;
 }
 
@@ -711,7 +712,7 @@
      position: relative;
 }
  .footer-link-contact ul li p{
-     font-size: 16px;
+     font-size: 18px;
      color: #cccccc;
      font-weight: 300;
      padding-right: 16px;
