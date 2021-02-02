@@ -123,3 +123,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATUC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# Email Settings
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = True
