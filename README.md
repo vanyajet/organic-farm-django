@@ -1,6 +1,11 @@
-# organicfarm.pro Django
+# e-commerce webapp w/ Django back-end
 
-E-commerce site w/ django 'backend' 
+http://organicfarm.pro/
+
+Libs and frameworks used:
+
+## Basic HTML CSS JS + jQuery for front-end
+## Django (Back-end)
+## Rest framework (Django)
 
 
-https://organicfarm.pro/
